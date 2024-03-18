@@ -131,8 +131,8 @@ CREATE TABLE `teacher` (
   `surname` varchar(200) COLLATE utf8mb3_unicode_ci NOT NULL,
   `email` varchar(200) COLLATE utf8mb3_unicode_ci NOT NULL,
   `password` varchar(300) COLLATE utf8mb3_unicode_ci NOT NULL,
-  `postID` int NOT NULL,
-  `departmentID` int NOT NULL
+  `postID` int DEFAULT NULL,
+  `departmentID` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 
 --
